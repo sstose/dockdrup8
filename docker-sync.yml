@@ -1,10 +1,11 @@
 version: "2"
 
 syncs:
-  ${PROJECT_NAME}_sync:
-    src: './web/'
+  docker-sync:
+    src: '.'
     sync_userid: '1000'
     sync_excludes: ['.gitignore', '.git/', '.idea/']
+    sync_strategy: 'native_osx'
 #  docker-sync-another-project:
 #    src: '/absolute/path/to/project/codebase'
 #    sync_userid: '1000'
